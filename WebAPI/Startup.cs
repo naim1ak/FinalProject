@@ -31,9 +31,10 @@ namespace WebAPI
         {
             //Autofac, Ninject, CastleWindsor, StructureMap, LightInject, DryInject --> IoC Container
             //AOP  (Aspect-Oriented Programming), programınıza ek işlevsellikler eklemek için kullanılan bir tekniktir. Geleneksel yöntemlerle kodunuza gömülü olarak eklemek zor olabilecek çapraz kesen kaygıları (cross-cutting concerns) ele almak için idealdir.
+            //Postsharp
             services.AddControllers();
-            services.AddSingleton<IProductService, ProductManager>();
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService, ProductManager>();
+            //services.AddSingleton<IProductDal, EfProductDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
