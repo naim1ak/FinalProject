@@ -1,4 +1,6 @@
-﻿namespace Business.Constants
+﻿using System.Runtime.Serialization;
+
+namespace Business.Constants
 {
     public static class Messages
     {
@@ -10,5 +12,6 @@
         public static string ProductNameAlreadyExists="Bu isimde zaten başka bir ürün var.";
         public static string CategoryCountExceedsLimit= "Mevcut kategori sayısı 15'i geçtiyse sisteme yeni ürün eklenemez.";
         public static string CategoryLimitExceded="Kategori limiti aşıldığından yeni ürün eklenemez.";
+        public static string AuthorizationDenied="Yetkiniz yoktur.";
     }
 }
